@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" >
+    <head>
+        <title>Google Advanced Search</title>
+        <style>
+            .finds{
+               
+                font-size:30px;
+                text-align:left;
+                padding-right:10px;
+               
+            }
+            .finds>#button{
+                background-color:blue;
+                color:white;
+                margin-top:30px;
+                margin-left:550px;
+                height:40px;
+                width:190px;
+                padding:10px 40px;
+                border:none;
+                outline:none;
+                font-size:16px;
+                text-align:left;
+            }
+            .finds> #button:hover{
+                border:1px solid DarkBlue;
+            }
+            .links{
+                position:absolute;
+                right:2%;
+                top:2%;
+            }
+            .finds>input{
+                height:40px;
+                border-radius:5px;
+                padding-left:10px;
+                margin-top:5px;
+                width:500px;
+                font-size:14px;
+                outline:none;
+                border:1px solid #dcdcdc;
+                text-align:left;
+            }
+            input[type=text] {
+                    background-color: white;
+                    background-image: url('searchicon.png');
+                    background-position: 1px 3px; 
+                    background-repeat: no-repeat;
+                   padding: 5px 30px 5px 60px;   
+           }
+        </style>
+    </head>
+    <body>
+            <IMG STYLE="position:absolute; TOP:10px; LEFT:10px; WIDTH:148px; HEIGHT:68px;"  SRC="google_logo.png"><br>
+                <br>
+                <br>
+                <h1>Find pages with...</h1>
+            <form  class="finds" action="https://www.google.com/search">
+                All these words:           <input style="margin-left:180px;" type="text" name="q" placeholder="all these words:"/><br>
+                This exact word or phrase: <input  style="margin-left:55px;"type="text" name="q" placeholder="this exact word or phrase:"/><br>
+                Any of these words:        <input style="margin-left:132px;" type="text" name="q" placeholder="any of these words:"/><br>
+                None of these words:       <input style="margin-left:117px;" type="text" name="q" placeholder="None of these words:"/><br>
+                <input id="button" type="submit" value="Advanced Search">
+            </form>
+            <div class="links">
+                <a href="search.html">Google search</a>
+                <a href="google_advanced.html">Google Advanced Search</a>
+            </div>
+
+    </body>
+</html>

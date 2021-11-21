@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" >
+    <head>
+        <title>Google Image Search</title>
+        <style>
+            #button1{
+                border:none;
+                text-align:center;
+                position:absolute;
+                top:400px;
+                left:650px;
+                cursor:pointer;
+                padding:10px; 
+            }
+            #button1:hover{
+                border:1px solid #ccc;
+            }
+            #button2:hover{
+                border:1px solid #ccc;
+            }
+            #button2{
+                border:none;
+                text-align:center;
+                position:absolute;
+                top:400px;
+                left:790px;
+                cursor:pointer;
+                padding:10px; 
+            }
+            .links{
+                position:absolute;
+                right:2%;
+                top:2%;
+            }
+            .attr1{
+                border-radius:30px;
+                right:580px;
+                bottom:524px;
+                height:40px;
+                width:470px;
+                margin-top:310px;
+                margin-left:490px;
+                outline:none;
+                font-size:16px;
+                border:2px solid #ccc;
+               
+            }
+            input[type=text] {
+                    background-color: white;
+                    background-image: url('searchicon.png');
+                    background-position: 10px 10px; 
+                    background-repeat: no-repeat;
+                   padding: 5px 30px 5px 60px;   
+           }
+        </style>
+    </head>
+    <body>
+            <IMG STYLE="position:absolute; BOTTOM:424px; RIGHT:580px; WIDTH:348px; HEIGHT:128px;"  SRC="google_logo.png">
+            <form method="get" action="http://images.google.com/images">
+                <input class="attr1" type="text" name="q" placeholder=" Search Google or type a url"/>
+                <br>
+                <input id="button1" type="submit" value="Google Search" >
+                <input id="button2" type="submit" value="I`m Feeling Lucky" >  
+            </form>
+            <div class="links">
+                <a href="search.html">Google search</a>
+                <a href="google_advanced.html">Google Advanced Search</a>
+            </div>
+
+    </body>
+</html>
